@@ -5,7 +5,13 @@ const zwift = require('./zwift');
 
 (async () => {
     const browser = await chromium.launch({ headless: false });
-    const page = await browser.newPage({ acceptDownloads: true });
+    const page = await browser.newPage({
+        acceptDownloads: true,
+        viewport: {
+            width: 1440,
+            height: 900,
+        }
+    });
 
     try {
         await zwift.navigateToLogin(page);
