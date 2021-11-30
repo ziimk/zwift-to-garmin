@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "playwright": "^1.6.2"
+    "playwright": "^1.17.0"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
